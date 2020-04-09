@@ -23,10 +23,6 @@ Input files are defined in parameter file. Outputs are written under a directory
 ### REQUIREMENT ###
   fdmam-distrib.c (main program)
   
-  nrutil.c, nrutil.h, nr.h (common files after Numerical Recipes). Don't touch.
-  
-  myfdm5-3.h (common file). Don't touch.
-  
   "test.prm" (main parameter file, defined as PRM in the main program). To edit. 
 
   test.src (souce location file, defined in "test.prm"). To edit. 
@@ -35,4 +31,10 @@ Input files are defined in parameter file. Outputs are written under a directory
   
   test.sta (station location file, defined in "test.prm"). To edit. 
   
+  nrutil.c, nrutil.h, nr.h (common files after Numerical Recipes). Don't touch.
   
+  myfdm5-3.h (common file). Don't touch.
+  
+### Model setting ###
+The code calculate the wave propagation in 3D infintie elastic medium (X:EW, Y:NS, Z:Up) with the free surface at Z = 0 m. The earthquake source can be given for any, multiple positions (test.src) wiht complex slip history (test.hist). The outpus are kept for the predefined reveivers positions (test.sta). 
+
