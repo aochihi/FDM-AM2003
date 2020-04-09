@@ -7,6 +7,6 @@ The program is written in C language, using some libraries from Numerical Recipe
 The MPI parallelization is built for one-horizontal direcion (X), and OpenMP can be used in each sub-domains. 
 A recent version written in C++ is pulished as Ondes3D, availbale from https://bitbucket.org/fdupros/ondes3d/src/master/. 
 
-For any utilization, please refer and cite 
+For any utilization, please refer and cite : 
 Aochi, H. and R. Madariaga (2003), The 1999 Izmit, Turkey, earthquake: Non-planar fault structure, dynamic rupture process and strong ground motion, Bull. Seism. Soc. Am., 93, 1249-1266. doi:10.1785/0120020167.
 
