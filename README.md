@@ -49,24 +49,24 @@ The model parameters are in "test.prm"
 > -200        # Z-along grid number ZMIN, ZMAX=0 (implicit)
 >
 > 6000        # total time steps
-
+>
 > ./test1/    # output directory
-
+>
 > test1.src   # source position file
-
+>
 > test1.hist  # source slip history file
-
+>
 > test1.sta   # station position file
-
+>
 > 200   0.01  # grid size (ds) in m, time step (dt) in s 
-
+>
 > 4           # number of 1D layer model
-
+>
 > 0   3220  1780  2330  300 # top depth of layer 1 (km), Vp (m/s), Vs (m/s), rho (kg/m3), Q
-
+>
 > -1  4620  2650  2550  300 # layer 2
-
+>
 > -5  5940  3420  2710  300 # layer 3
-
+>
 > -12 6170  3550  2750  300 # layer 4 (the end)
-
+>
