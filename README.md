@@ -41,13 +41,13 @@ The code calculate the wave propagation in 3D infintie elastic medium (X:EW, Y:N
 The model parameters are in "test.prm"  
 
 > 4           # 4th order in space. 4 or 2.
-
+>
 > -375  625   # X-along grid number XMIN, XMAX
-
+>
 > -300  300   # Y-along grid number YMIN, YMAX
-
+>
 > -200        # Z-along grid number ZMIN, ZMAX=0 (implicit)
-
+>
 > 6000        # total time steps
 
 > ./test1/    # output directory
