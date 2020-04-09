@@ -11,12 +11,28 @@ For any utilization, please refer and cite :
 Aochi, H. and R. Madariaga (2003), The 1999 Izmit, Turkey, earthquake: Non-planar fault structure, dynamic rupture process and strong ground motion, Bulletin of Seismological Society of America, 93, 1249-1266. doi:10.1785/0120020167.
 
 ### COMPILING ### 
-module load intelmpi (depending on the server)
+> module load intelmpi (depending on the server)
 
-mpicc -qopenmp -O -I. fdmam-distrib.c nrutil.c -o (exe_file_name)
+> mpicc -qopenmp -O -I. fdmam-distrib.c nrutil.c -o (exe_file_name)
 
 ### RUNING ###
-(exe_file_name)
+> (exe_file_name)
+
+Input files are defined in parameter file. Outputs are written under a directory defined in parameter file. 
 
 ### REQUIREMENT ###
+  fdmam-distrib.c (main program)
+  
+  nrutil.c, nrutil.h, nr.h (common files after Numerical Recipes). Don't touch.
+  
+  myfdm5-3.h (common file). Don't touch.
+  
+  "test.prm" (main parameter file, defined as PRM in the main program). To edit. 
 
+  test.src (souce location file, defined in "test.prm"). To edit. 
+  
+  test.hist (source history file, defined in "test.prm"). To edit.
+  
+  test.sta (station location file, defined in "test.prm"). To edit. 
+  
+  
