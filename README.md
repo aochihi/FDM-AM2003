@@ -18,7 +18,7 @@ Aochi, H. and R. Madariaga (2003), The 1999 Izmit, Turkey, earthquake: Non-plana
 ### RUNING ###
 > (exe_file_name)
 
-Input files are defined in parameter file. Outputs are written under a directory defined in parameter file. 
+Input files are defined in parameter file. Outputs are written under a directory defined in parameter file. To be sure that the input parameter files exist and the output directory is created before computation.
 
 ### REQUIREMENT ###
 >  fdmam-distrib.c (main program)
@@ -36,7 +36,7 @@ Input files are defined in parameter file. Outputs are written under a directory
 >  myfdm5-3.h (common file). Don't touch.
   
 ### Model setting ###
-The code calculate the wave propagation in 3D infintie elastic medium (X:EW, Y:NS, Z:Up) with the free surface at Z = 0 m. For simplicity, the 1D layered model can be given in parameter file (test.prm). The numerical parameters should be checked prior to the simulations (no automatic check during run). The earthquake source can be given for any, multiple positions (test.src) wiht complex slip history (test.hist). The outpus are kept for the predefined reveivers positions (test.sta). 
+The code calculate the wave propagation in 3D infintie elastic medium (X:EW, Y:NS, Z:Up) with the free surface at Z = 0 m. The calculation volume is V = X \* Y \* Z = (ds\*XMIN, ds\*XMAX) \* (ds\*YMIN, ds\*YMAX) \* (ds\*ZMIN,0) m^3 for a duration of t = (0, NTMAX\*dt) s. For simplicity, the 1D layered model can be given in parameter file (test.prm). The numerical parameters should be checked prior to the simulations (no automatic check during run). The earthquake source can be given for any, multiple positions (test.src) wiht complex slip history (test.hist). The outpus are kept for the predefined reveivers positions (test.sta). 
 
 The model parameters are in "test.prm"  
 
@@ -48,7 +48,7 @@ The model parameters are in "test.prm"
 >
 > -200        # Z-along grid number ZMIN, ZMAX=0 (implicit)
 >
-> 6000        # total time steps
+> 6000        # total time steps NTMAX
 >
 > ./test1/    # output directory
 >
